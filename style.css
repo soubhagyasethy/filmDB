@@ -1,12 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@700&display=swap'); */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-image: linear-gradient(to right, black, rgba(26, 26, 101, 0.863), black);
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -49,4 +52,9 @@
     color: whitesmoke;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    background-color: rgb(255, 208, 0);
+    height: 18px;
 }
