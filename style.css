@@ -7,18 +7,20 @@
     padding: 0;
 }
 
+
 body {
     background-image: linear-gradient(to right, black, rgba(26, 26, 101, 0.863), black);
 }
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
-    padding: 20px;
+    padding: 30px;
 }
 
-.imdb-logo {
+.navbar__logo {
     color: black;
     background-color: rgb(255, 208, 0);
     font-family: 'Inter', sans-serif;
@@ -28,7 +30,7 @@ body {
     letter-spacing: -0.8px;
 }
 
-.search {
+.navbar__search {
     height: 50%;
     width: 40%;
     padding: 7px 7px 7px 15px;
@@ -37,7 +39,7 @@ body {
     margin: 0 50px 0 50px;
 }
 
-.favorites {
+.navbar__favorites {
     font-size: 18px;
     text-decoration: none;
     color: whitesmoke;
@@ -46,15 +48,11 @@ body {
     margin-right: 20px;
 }
 
-.sign-in {
+/* .sign-in {
     font-size: 17.5px;
     text-decoration: none;
     color: whitesmoke;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
-}
+} */
 
-.menu {
-    background-color: rgb(255, 208, 0);
-    height: 18px;
-}
