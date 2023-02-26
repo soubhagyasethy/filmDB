@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    font-size: larger;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -78,4 +82,57 @@ body {
     border: none;
     border-left: 8px solid rgb(205, 169, 7);
     background-color: rgb(218, 214, 210);
+}
+
+/* making it responsive */
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin: 0 50px 0 50px;
+        font-size: 25px;
+    }
+    
+    .favorites, .home {
+        font-size: 18px;
+        padding: 5px;
+    }
+    
+    .favorites {
+        margin-right: 50px ;
+    }
+    
+    .home {
+        margin-right: 15px;
+    }
+
+    .search {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .favorites {
+        margin-right: 50px ;
+    }
+    
+    .home {
+        margin-right: 15px;
+    }
+    
+    .search {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .search {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .search {
+        width: 40%;
+    }
 }
