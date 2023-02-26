@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@900&display=swap');
 
 * {
@@ -7,9 +6,12 @@
     padding: 0;
 }
 
-
 body {
-    background-image: linear-gradient(to right, black, rgba(26, 26, 101, 0.863), black);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(black, rgb(76, 73, 73), black);
 }
 
 .navbar {
@@ -20,39 +22,60 @@ body {
     padding: 30px;
 }
 
-.navbar__logo {
+.logo {
     color: black;
-    background-color: rgb(255, 208, 0);
+    background-color: rgb(205, 169, 7);
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
-    padding: 3px 6px;
     border-radius: 5px;
     letter-spacing: -0.8px;
+    padding: 3px 6px;
+    margin: 0 auto 0 150px
 }
 
-.navbar__search {
-    height: 50%;
+.favorites, .home {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(209, 205, 205);
+    font-family: 'Roboto', sans-serif;
+    padding: 7px;
+    border: 1px solid rgb(148, 147, 147);
+}
+
+.favorites {
+    margin-right: 150px ;
+}
+
+.home {
+    margin-right: 40px;
+}
+
+.favorites:hover {
+    color: rgb(205, 169, 7);
+    border: 1px solid rgb(205, 169, 7);
+    transition: 0.4s;
+}
+
+.home:hover {
+    color: rgb(205, 169, 7);
+    border: 1px solid rgb(205, 169, 7);
+    transition: 0.4s;
+}
+
+/* style the search */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.search {
+    height: 45px;
+    font-size: 20px;
     width: 40%;
     padding: 7px 7px 7px 15px;
-    border: 2px solid rgb(255, 208, 0);
-    border-radius: 4px;
-    margin: 0 50px 0 50px;
+    border: none;
+    border-left: 8px solid rgb(205, 169, 7);
+    background-color: rgb(218, 214, 210);
 }
-
-.navbar__favorites {
-    font-size: 18px;
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 20px;
-}
-
-/* .sign-in {
-    font-size: 17.5px;
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
-} */
-
