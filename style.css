@@ -1,138 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@900&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: larger;
+  font-size: larger;
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(black, rgb(76, 73, 73), black);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(black, rgb(76, 73, 73), black);
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 30px;
 }
 
 .logo {
-    color: black;
-    background-color: rgb(205, 169, 7);
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5px;
-    letter-spacing: -0.8px;
-    padding: 3px 6px;
-    margin: 0 auto 0 150px
+  color: black;
+  background-color: rgb(205, 169, 7);
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  letter-spacing: -0.8px;
+  padding: 3px 6px;
+  margin: 0 auto 0 100px;
 }
 
-.favorites, .home {
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: rgb(209, 205, 205);
-    font-family: 'Roboto', sans-serif;
-    padding: 7px;
-    border: 1px solid rgb(148, 147, 147);
+.favorites,
+.home {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(209, 205, 205);
+  font-family: "Roboto", sans-serif;
+  padding: 7px;
+  border: 1px solid rgb(148, 147, 147);
 }
 
 .favorites {
-    margin-right: 150px ;
+  margin-right: 150px;
 }
 
 .home {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .favorites:hover {
-    color: rgb(205, 169, 7);
-    border: 1px solid rgb(205, 169, 7);
-    transition: 0.4s;
+  color: rgb(205, 169, 7);
+  border: 1px solid rgb(205, 169, 7);
+  transition: 0.4s;
 }
 
 .home:hover {
-    color: rgb(205, 169, 7);
-    border: 1px solid rgb(205, 169, 7);
-    transition: 0.4s;
+  color: rgb(205, 169, 7);
+  border: 1px solid rgb(205, 169, 7);
+  transition: 0.4s;
 }
 
 /* style the search */
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
 .search {
-    height: 45px;
-    font-size: 20px;
-    width: 40%;
-    padding: 7px 7px 7px 15px;
-    border: none;
-    border-left: 8px solid rgb(205, 169, 7);
-    background-color: rgb(218, 214, 210);
+  height: 45px;
+  font-size: 20px;
+  width: 40%;
+  padding: 7px 7px 7px 15px;
+  border: none;
+  border-left: 8px solid rgb(205, 169, 7);
+  background-color: rgb(218, 214, 210);
 }
 
 /* making it responsive */
 @media only screen and (max-width: 600px) {
-    .logo {
-        margin: 0 50px 0 50px;
-        font-size: 25px;
-    }
-    
-    .favorites, .home {
-        font-size: 18px;
-        padding: 5px;
-    }
-    
-    .favorites {
-        margin-right: 50px ;
-    }
-    
-    .home {
-        margin-right: 15px;
-    }
+  .logo {
+    margin: 0 50px 0 50px;
+    font-size: 25px;
+  }
 
-    .search {
-        width: 100%;
-    }
+  .favorites,
+  .home {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .favorites {
+    margin-right: 50px;
+  }
+
+  .home {
+    margin-right: 15px;
+  }
+
+  .search {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    
-    .favorites {
-        margin-right: 50px ;
-    }
-    
-    .home {
-        margin-right: 15px;
-    }
-    
-    .search {
-        width: 70%;
-    }
+  .favorites {
+    margin-right: 50px;
+  }
+
+  .home {
+    margin-right: 15px;
+  }
+
+  .search {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-
-    .search {
-        width: 50%;
-    }
+  .search {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .search {
-        width: 40%;
-    }
+  .search {
+    width: 40%;
+  }
 }
