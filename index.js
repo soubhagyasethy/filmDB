@@ -20,7 +20,7 @@ searchInput.addEventListener("input", () => {
 
             <div class="movie-detail">
                 <h3>${movie.Title}</h3>
-                <h3 class="movie-year">${movie.Year}<h3>
+                <h3 class="movie-year">${movie.Type} • ${movie.Year}<h3>
                 <button class="favourite">Add to Favourites</button>
             </div>
         </div>`;
