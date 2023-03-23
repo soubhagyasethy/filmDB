@@ -5,7 +5,7 @@ const searchResults = document.getElementById("searchResults");
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value;
 
-  const url = `http://www.omdbapi.com/?apikey=${myKey}&s=${searchTerm}`;
+  const url = `https://www.omdbapi.com/?apikey=${myKey}&s=${searchTerm}`;
 
   fetch(url)
     .then((response) => response.json())
