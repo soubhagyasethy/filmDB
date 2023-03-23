@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -73,9 +74,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  margin-top: 1rem;
 }
-.search {
+
+.search-input {
   height: 45px;
   font-size: 20px;
   width: 40%;
@@ -85,54 +87,57 @@ body {
   background-color: rgb(218, 214, 210);
 }
 
-/* making it responsive */
-@media only screen and (max-width: 600px) {
-  .logo {
-    margin: 0 50px 0 50px;
-    font-size: 25px;
-  }
-
-  .favorites,
-  .home {
-    font-size: 18px;
-    padding: 5px;
-  }
-
-  .favorites {
-    margin-right: 50px;
-  }
-
-  .home {
-    margin-right: 15px;
-  }
-
-  .search {
-    width: 100%;
-  }
+/* serach results */
+.search-results {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 0.5rem;
+  color: black;
+  background-color: rgb(218, 214, 210);
+  width: 40%;
+  margin: 0.5rem auto 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
-  .favorites {
-    margin-right: 50px;
-  }
-
-  .home {
-    margin-right: 15px;
-  }
-
-  .search {
-    width: 70%;
-  }
+.movie {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(205, 169, 7);
 }
 
-@media only screen and (min-width: 992px) {
-  .search {
-    width: 50%;
-  }
+.movie:hover {
+  background-color: rgb(177, 173, 173);
 }
 
-@media only screen and (min-width: 1200px) {
-  .search {
-    width: 40%;
-  }
+img {
+  width: 80px;
+  border-radius: 0.2rem;
+}
+
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 0.5rem;
+}
+
+.movie-year {
+  font-weight: 400;
+}
+
+.favourite {
+  font-family: "Inter", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 0.35rem;
+  background-color: rgb(205, 169, 7);
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.favourite:hover {
+  border: 1px solid black;
+  opacity: 0.7;
+  transition: 0.1s;
 }
