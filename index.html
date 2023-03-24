@@ -11,9 +11,19 @@
 
   <body>
     <nav class="navbar">
-      <h1 class="logo">FilmDB</h1>
-      <a class="home" href="/">Home</a>
-      <a class="favorites" href="/">Favorites</a>
+      <h1 class="navbar-logo">FilmDB</h1>
+      <a
+        class="navbar-home"
+        href="/"
+        style="
+          font-size: large;
+          font-weight: 900;
+          color: rgb(205, 169, 7);
+          border: 1px solid rgb(205, 169, 7);
+        "
+        >Home</a
+      >
+      <a class="navbar-favourites" href="./favourites.html">Favorites</a>
     </nav>
 
     <div class="search-container">
@@ -25,14 +35,7 @@
       />
     </div>
 
-    <div class="search-results" id="searchResults">
-      <!-- <div class="movie">
-        <img class="movie-poster" src="" alt="movie poster" />
-        <h3>John Wick: Chapter 4</h3>
-        <h4>2023</h4>
-        <button class="favourite">Add to Favourites</button>
-      </div> -->
-    </div>
+    <div class="search-results" id="searchResults"></div>
 
     <script type="text/javascript" src="index.js"></script>
   </body>
