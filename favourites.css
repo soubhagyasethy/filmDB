@@ -132,3 +132,22 @@ img {
   color: black;
   transition: 0.4s;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+
+  .navbar-logo {
+    margin: 0 60px 0 2px;
+  }
+
+  .navbar-favourites {
+    margin-right: 2px;
+  }
+
+  .navbar-home {
+    margin-right: 10px;
+  }
+}
